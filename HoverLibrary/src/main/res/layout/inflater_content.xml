@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:id="@+id/chainTabView"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:fadingEdge="none"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/tabParent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <idea.analyzesystem.hover.pinnedsection.PinnedSectionListView
+        android:id="@+id/pinnedSectionListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:scrollbars="none" />
+</LinearLayout>
